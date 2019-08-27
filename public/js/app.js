@@ -1,4 +1,4 @@
-console.log("Client Side JS running!!")
+
 
 // fetch is a browser based API;fetch is not accessible in node.js;fetch is a function
 
