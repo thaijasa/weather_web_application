@@ -1,0 +1,56 @@
+body{
+    color: darkolivegreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto ; 
+    /* auto is going to evenly space the margin on left and right. 0 is for top and bottom */
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.maincontent{
+    flex-grow: 1
+    /* // main contect should take up all the left over space */
+}
+footer{
+    color: darkolivegreen;
+    border-top:1px solid black;
+    margin-top: 16px;
+    padding: 16px 0px;
+        /* when you use a single value it gets applied on all sides */
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+header a{
+    color: #888888;
+    margin: 16px;
+    text-decoration: none
+}
+
+.myphoto{
+    width: 250px;
+}
+
+input{
+    border: 1px solid darkcyan;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid darkcyan;
+    background: darkcyan;
+    color: white;
+    padding: 8px
+}
