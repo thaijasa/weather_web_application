@@ -5,8 +5,8 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 
-
 const app = express() // express is just a function and not object. does not take any arguments
+const port = process.env.PORT || 3000 // the port was set as 3000 till heroku was used. now when application is being deployed on heroku 3000 does not amke sense as it is a local port. so heroku gives its own port number which is available at process.env.PORT
 
 const publicDirectoryPath = path.join(__dirname, "../public")
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -102,8 +102,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () =>{
-    console.log("Server is up and running on port 3000!")
+app.listen(port, () =>{
+    console.log("Server is up and running on port " + port + "!!")
 })
 
 
